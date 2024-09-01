@@ -35,7 +35,7 @@
         </StackPanel>
 
         <StackPanel Grid.Row="2"  Margin="0,20,0,0" >
-            <Expander Header="Session history" HorizontalAlignment="Center"  HorizontalContentAlignment="Left" Width="380">
+            <Expander Header="Session history" HorizontalAlignment="Center"  HorizontalContentAlignment="Left" Width="380" IsExpanded="true">
                 <ListView x:Name="SessionHistoryListView">
                     <ListView.ItemTemplate>
                         <DataTemplate>
