@@ -28,11 +28,21 @@ namespace PixelPaw
         }
         private void RescaleButton_Click(object sender, RoutedEventArgs e)
         {
-            // Set a new scale value
-            float scaleValue = 1.5f; // Example scale value
+            // Define the pixel increase value
+            double pixelIncrease = 10.0; // Example increase by 20 pixels
 
-            // Apply the scale to the rectangle
-            ScaleRectangle.Height *= scaleValue;
+            // Define the maximum height limit
+            double maxHeight = 270.0;
+
+            // Increase the rectangle's height, ensuring it does not exceed the maximum height
+            if (ScaleRectangle.Height + pixelIncrease <= maxHeight)
+            {
+                ScaleRectangle.Height += pixelIncrease;
+            }
+            else
+            {
+                ScaleRectangle.Height = maxHeight;
+            }
         }
     }
 }

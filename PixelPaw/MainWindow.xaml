@@ -23,7 +23,7 @@
                 <Rectangle x:Name="GrayBar" Width="50"  Height="270" Fill="#a0a0a0"/>
                 <Rectangle x:Name="ScaleRectangle" Width="50" Height="10" Fill="{ThemeResource SystemAccentColor}" VerticalAlignment="Bottom"/>
             </Grid>
-            <Button Content="Rescale Rectangle" Click="RescaleButton_Click" Width="110" Height="35" Foreground="White" Background="#0061b8" VerticalAlignment="Top" Margin="0,15,0,0"/>
+            <Button Content="Accelerate" Click="RescaleButton_Click" Width="110" Height="35" Foreground="White" Background="#0061b8" VerticalAlignment="Top" Margin="0,15,0,0"/>
         </StackPanel>
     </Grid>
 </Window>
