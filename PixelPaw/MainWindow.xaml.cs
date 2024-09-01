@@ -25,6 +25,7 @@ namespace PixelPaw
             this.InitializeComponent();
             this.AppWindow.MoveAndResize(new Windows.Graphics.RectInt32(0, 0, 500, 870));
             this.AppWindow.Title = "Test App";
+            PopulateSessionHistory();
         }
         private void RescaleButton_Click(object sender, RoutedEventArgs e)
         {
@@ -44,5 +45,22 @@ namespace PixelPaw
                 ScaleRectangle.Height = maxHeight;
             }
         }
+
+        private void PopulateSessionHistory()
+        {
+            var sessions = new List<SessionInfo>
+            {
+                new SessionInfo { LoginTime = "Login time: 2024-08-28 | 11:00 AM", SessionName = "Session 3" },
+                new SessionInfo { LoginTime = "Login time: 2024-08-28 | 10:00 AM", SessionName = "Session 2" },
+                new SessionInfo { LoginTime = "Login time: 2024-08-28 | 09:00 AM", SessionName = "Session 1" }
+            };
+
+            SessionHistoryListView.ItemsSource = sessions;
+        }
+    }
+    public class SessionInfo
+    {
+        public string LoginTime { get; set; }
+        public string SessionName { get; set; }
     }
 }
