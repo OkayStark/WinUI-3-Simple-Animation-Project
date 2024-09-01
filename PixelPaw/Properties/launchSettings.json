@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "PixelPaw (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "PixelPaw (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
